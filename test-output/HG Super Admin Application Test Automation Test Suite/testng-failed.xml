@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [HG Super Admin Application Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.handelsgillet.ExtentReportListner.ExtentReportHG"/>
+  </listeners>
+  <test name="Super Admin App Test Cases(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.RegistrationPageTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="registerTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.RegistrationPageTestCase -->
+      <class name="com.handelsgillet.TestCases.EventsSideMenuPageTestCase">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.EventsSideMenuPageTestCase -->
+      <class name="com.handelsgillet.TestCases.SideMenuMainTabsTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifySideHomeTabTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.SideMenuMainTabsTestCase -->
+    </classes>
+  </test> <!-- Super Admin App Test Cases(failed) -->
+</suite> <!-- Failed suite [HG Super Admin Application Test Automation Test Suite] -->

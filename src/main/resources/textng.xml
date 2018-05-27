@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HG Super Admin Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.handelsgillet.ExtentReportListner.ExtentReportHG"/>
+	</listeners>
+
+
+	<test name="Super Admin App Test Cases">
+		<classes>
+			
+			<class name="com.handelsgillet.TestCases.HGLandingMenuPageTestCase"></class>
+			
+			<class name="com.handelsgillet.TestCases.RegistrationPageTestCase"></class>
+			
+			<class name="com.handelsgillet.TestCases.LoginPageTestCase"></class>
+			
+			<class name="com.handelsgillet.TestCases.LoginMemberPageTestCase"></class>
+			
+			<class name="com.handelsgillet.TestCases.LoginClubAdminPageTestCase"></class>
+			
+			<class name="com.handelsgillet.TestCases.SideMenuMainTabsTestCase"></class>
+			
+			<class name="com.handelsgillet.TestCases.EventsSideMenuPageTestCase"></class>
+		
+		</classes>
+	</test>
+	
+</suite>
