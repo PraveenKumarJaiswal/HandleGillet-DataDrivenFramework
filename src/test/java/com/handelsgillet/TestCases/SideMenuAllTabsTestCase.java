@@ -120,7 +120,7 @@ public class SideMenuAllTabsTestCase extends TestBase
 	{
 		System.out.println("Test case 1 starts");		
 		sideMenuHomePage =  sideMenuAllTabs.clickOnSideHomeTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		System.out.println("Test case 1 Ends");
 	}
 	
@@ -129,7 +129,7 @@ public class SideMenuAllTabsTestCase extends TestBase
 	{
 		System.out.println("Test case 3 starts");
 		sideMenuManageMemberPage =  sideMenuAllTabs.clickOnSideManageMemberTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		System.out.println("Test case 3 ends");
 	}
 	
@@ -138,7 +138,7 @@ public class SideMenuAllTabsTestCase extends TestBase
 	{
 		System.out.println("Test case 4 starts");
 		sideMenuGroupsPage =  sideMenuAllTabs.clickOnSideGroupsTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		System.out.println("Test case 4 ends");
 	}
 	
@@ -147,7 +147,7 @@ public class SideMenuAllTabsTestCase extends TestBase
 	{
 		System.out.println("Test case 5 starts");
 		sideMenuEventsPage =  sideMenuAllTabs.clickOnSideEventsTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		System.out.println("Test case 5 ends");
 	}
 	
@@ -168,7 +168,7 @@ public class SideMenuAllTabsTestCase extends TestBase
 	{
 		System.out.println("This is 8 manage artical");
 		sideMenuManageArticlePage =  sideMenuAllTabs.clickOnSideManageArticleTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		System.out.println("This is 8 manage artical");
 	}
 	
@@ -176,49 +176,49 @@ public class SideMenuAllTabsTestCase extends TestBase
 	public void verifySideSuppliersTab() throws Throwable
 	{
 		sideMenuSuppliersPage =  sideMenuAllTabs.clickOnSideSuppliersTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=10)
 	public void verifySideManageRoomBooking() throws Throwable
 	{
 		sideMenuManageRoomBookingPage =  sideMenuAllTabs.clickOnSideManageRoomBookingTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=11)
 	public void verifySideFeeStructureTab() throws Throwable
 	{
 		sideMenuFeeStructurePage =  sideMenuAllTabs.clickOnSideFeeStructureTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=12)
 	public void verifySideRoleTab() throws Throwable
 	{
 		sideMenuRolePage =  sideMenuAllTabs.clickOnSideRolesTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=13)
 	public void verifySideStatisticsTab() throws Throwable
 	{
 		sideMenuStatisticsPage =  sideMenuAllTabs.clickOnSideStatisticsTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=14)
 	public void verifySideEditStaticPagesTab() throws Throwable
 	{
 		sideMenuEditStaticPage =  sideMenuAllTabs.clickOnSideEditStatisticsTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=15)
 	public void verifySideMemberType() throws Throwable
 	{
 		sideMenuMemberTypePage=  sideMenuAllTabs.clickOnSideMemberTypesTab();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	

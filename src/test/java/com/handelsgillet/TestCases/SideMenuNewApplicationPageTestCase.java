@@ -53,6 +53,7 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 		Thread.sleep(3000);
 		sideMenuNewApplicationsPage.ViewApplicationFormAndCancel();
 		Thread.sleep(3000);
+		System.out.println("Cazncel the application");
 		driver.quit();			
 	}
 	

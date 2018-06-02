@@ -7,49 +7,49 @@ import com.handelsgillet.testBase.TestBase;
 
 public class SideMenuAllTabs extends TestBase
 {
-	@FindBy(xpath="//a[@class='active']")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[1]")
 	WebElement sideHomeTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[1]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[2]")
 	WebElement sideNewApplicationTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[2]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[3]")
 	WebElement sideManageMemberTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[3]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[4]")
 	WebElement sideGroupsTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[4]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[5]")
 	WebElement sideEventsTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[5]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[6]")
 	WebElement sideManageTagsTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[6]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[0]")
 	WebElement sideCreateSiteTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[7]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[7]")
 	WebElement sideManageArticleTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[8]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[8]")
 	WebElement sideSuppliersTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[9]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[9]")
 	WebElement sideManageRoomBookingTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[10]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[10]")
 	WebElement sideFeeStructureTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[11]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[11]")
 	WebElement sideRole;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[12]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[12]")
 	WebElement sideStatisticsTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[13]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[13]")
 	WebElement sideEditStaticPageTab;
 	
-	@FindBy(xpath="//a[@class='active']//following::li[14]")
+	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[14]")
 	WebElement sideMemberTypesTab;
 	
 	
