@@ -108,6 +108,9 @@ public class RegistrationPage extends TestBase
 	@FindBy(xpath="//input[@name='varPositon']")
 	WebElement workPosition;
 	
+	@FindBy(xpath="//input[@name='varWorkTitle']")
+	WebElement workTitle;
+		
 	@FindBy(xpath="//input[@name='varWorkTelephone']")
 	WebElement workTelephone;
 	
@@ -186,7 +189,7 @@ public class RegistrationPage extends TestBase
 
    
 	 public void newRegistration(String ftName, String mdName, String lsName,String dob,String bPlace,String occ,String phomeTel,String pMob, String pEmail,String pAddress,
-	            String pZipCode, String pHomePlace,String wkEmpAt, String wkPos, String wkTel,
+	            String pZipCode, String pHomePlace,String wkEmpAt, String wkPos, String wkTitle,String wkTel,
 	            String wkMob,String wkAddress, String wkZipCode,String wkPlace,String motherTongue,String homeLang,String oCitizenship,String attendFirst, String attendSecond) throws InterruptedException
 	    {
 	        //Click on Apply for membership.
@@ -248,6 +251,10 @@ public class RegistrationPage extends TestBase
 	        
 	        workPosition.sendKeys(wkPos);
 	        System.out.println("work position  is"+wkPos);
+	        Thread.sleep(1000);
+	        
+	        workTitle.sendKeys(wkTitle);
+	        System.out.println("work title  is"+wkTitle);
 	        Thread.sleep(1000);
 	        
 	        workTelephone.sendKeys(wkTel);

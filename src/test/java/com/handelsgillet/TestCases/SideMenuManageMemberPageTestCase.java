@@ -63,7 +63,6 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 	public void verifyManageMemberViewAndPrint() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
-		Thread.sleep(3000);
 		sideMenuManageMemberPage.viewManageMemberTableData();
 		Thread.sleep(3000);
 		sideMenuManageMemberPage.viewManageMemberAndPrint();
@@ -87,7 +86,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void verifyManageMemberDeleteNo() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -111,7 +110,20 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 6, enabled = false)
+	//DANGER
+	
+	@Test(priority =9 , enabled = false)
+	public void verifyManageMemberDeleteAllYes() throws Throwable
+	{
+		sideMenuAllTabs.clickOnSideManageMemberTab();
+		Thread.sleep(3000);
+		sideMenuManageMemberPage.viewManageMemberTableData();
+		Thread.sleep(3000);
+		sideMenuManageMemberPage.deleteManageMemberAllYes();
+					
+	}
+	
+	@Test(priority = 6, enabled = true)
 	public void verifysubscriptionManageMemberClose() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -143,7 +155,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 		sideMenuManageMemberPage.detailsManageMemberClubClose();
 					
 	}
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 8, enabled = false)
 	public void verifyDetailsManageMemberGroupClose() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();

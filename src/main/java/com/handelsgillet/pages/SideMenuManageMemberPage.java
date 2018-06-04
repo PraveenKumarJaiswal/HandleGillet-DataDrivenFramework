@@ -113,6 +113,7 @@ public class SideMenuManageMemberPage extends TestBase
 			backButton.click();
 			System.out.println("clicked on back button");
 			Thread.sleep(3000);
+			view = driver.findElements(By.xpath("//td[8]/button"));
 		}
 	}
 	
@@ -131,6 +132,7 @@ public class SideMenuManageMemberPage extends TestBase
 			updateMemberButton.click();
 			System.out.println("clicked on print button");
 			Thread.sleep(3000);
+			view = driver.findElements(By.xpath("//td[8]/button"));
 		}
 	}
 	
@@ -166,7 +168,6 @@ public class SideMenuManageMemberPage extends TestBase
 			deletePopup.getText();
 			Thread.sleep(3000);
 			deleteNoButton.click();
-			Thread.sleep(3000);
 		}
 	}
 	
@@ -185,6 +186,25 @@ public class SideMenuManageMemberPage extends TestBase
 			System.out.println("++++++++++++++++++++++++++++++++++++++");
 			Thread.sleep(3000);
 		
+	}
+	// This will delete all element
+	public void deleteManageMemberAllYes() throws InterruptedException
+	{
+		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='Delete']"));
+		int view_count = view.size();
+		System.out.println("view count is: "+view_count);
+		for(int i=0;i<view_count;i++)
+		{
+			view.get(i).click();
+			Thread.sleep(3000);
+			System.out.println("Click on delete the Roles");
+			Thread.sleep(3000);
+			deletePopup.click();
+			Thread.sleep(3000);
+			deletePopup.getText();
+			Thread.sleep(3000);
+			deleteYesButton.click();
+		}
 	}
 	
 	public void subscriptionManageMemberClose() throws InterruptedException

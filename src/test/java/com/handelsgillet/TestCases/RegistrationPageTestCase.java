@@ -54,11 +54,11 @@ public class RegistrationPageTestCase extends TestBase
         
         @Test(priority=2, dataProvider="getHGAdminTestData")
         public void registerTest(String ftName, String mdName, String lsName,String dob,String bPlace,String occ,String phomeTel,String pMob, String pEmail,String pAddress,
-                String pZipCode, String pHomePlace,String wkEmpAt, String wkPos, String wkTel,
+                String pZipCode, String pHomePlace,String wkEmpAt, String wkPos, String wkTitle, String wkTel,
                 String wkMob,String wkAddress, String wkZipCode,String wkPlace,String motherTongue, String homeLang,String oCitizenship, String attendFirst, String attendSecond, String eNotes) throws InterruptedException
         
         {  
-            registrationPage.newRegistration(ftName, mdName, lsName, dob,bPlace, occ, phomeTel, pMob, pEmail,pAddress,pZipCode,pHomePlace, wkEmpAt, wkPos, wkTel, wkMob,wkAddress,wkZipCode,wkPlace,motherTongue,homeLang,oCitizenship,attendFirst,attendSecond);
+            registrationPage.newRegistration(ftName, mdName, lsName, dob,bPlace, occ, phomeTel, pMob, pEmail,pAddress,pZipCode,pHomePlace, wkEmpAt, wkPos, wkTitle, wkTel, wkMob,wkAddress,wkZipCode,wkPlace,motherTongue,homeLang,oCitizenship,attendFirst,attendSecond);
             //registrationPage.validateRegistrationPageTitle();
             }
        
