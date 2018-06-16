@@ -70,8 +70,6 @@ public class LoginPageTestCase extends TestBase
 	public void loginTest(String un, String pwd) throws Throwable
 	{
 		loginPage.login(un, pwd, sheetName);
-		
-		Thread.sleep(5000);
 	}
 	
 	

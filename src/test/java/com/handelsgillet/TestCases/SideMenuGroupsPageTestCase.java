@@ -47,9 +47,9 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		Thread.sleep(3000);
 		sideMenuGroupsPage.groupsSearch();
 		Thread.sleep(3000);
-		sideMenuGroupsPage.viewTableData();
-					
+		sideMenuGroupsPage.viewTableData();		
 	}
+	
 	@Test(priority = 1, enabled = false)
 	public void verifyViewGuoupAndBack() throws Throwable
 	{

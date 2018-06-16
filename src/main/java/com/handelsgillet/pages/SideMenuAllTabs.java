@@ -7,49 +7,49 @@ import com.handelsgillet.testBase.TestBase;
 
 public class SideMenuAllTabs extends TestBase
 {
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[1]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideHomeTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[2]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[22]")
 	WebElement sideNewApplicationTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[3]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[23]")
 	WebElement sideManageMemberTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[4]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[24]")
 	WebElement sideGroupsTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[5]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[25]")
 	WebElement sideEventsTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[6]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[26]")
 	WebElement sideManageTagsTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[0]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[27]")
 	WebElement sideCreateSiteTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[7]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideManageArticleTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[8]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideSuppliersTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[9]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideManageRoomBookingTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[10]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideFeeStructureTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[11]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideRole;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[12]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideStatisticsTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[13]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideEditStaticPageTab;
 	
-	@FindBy(xpath="//div[@class='col-md-12 hg-mainsection-user-block']//following::a[14]")
+	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
 	WebElement sideMemberTypesTab;
 	
 	

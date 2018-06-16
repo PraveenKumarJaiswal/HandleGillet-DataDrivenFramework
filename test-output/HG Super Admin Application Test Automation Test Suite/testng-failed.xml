@@ -6,27 +6,12 @@
   </listeners>
   <test name="Super Admin App Test Cases(failed)">
     <classes>
-      <class name="com.handelsgillet.TestCases.RegistrationPageTestCase">
+      <class name="com.handelsgillet.TestCases.SideMenuHomePageTestCase">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="registerTest" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- com.handelsgillet.TestCases.RegistrationPageTestCase -->
-      <class name="com.handelsgillet.TestCases.EventsSideMenuPageTestCase">
-        <methods>
-          <include name="verifyHomePageTitleTest"/>
-          <include name="tearDown"/>
+          <include name="homePageFeatures"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.handelsgillet.TestCases.EventsSideMenuPageTestCase -->
-      <class name="com.handelsgillet.TestCases.SideMenuMainTabsTestCase">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifySideHomeTabTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.handelsgillet.TestCases.SideMenuMainTabsTestCase -->
+      </class> <!-- com.handelsgillet.TestCases.SideMenuHomePageTestCase -->
     </classes>
   </test> <!-- Super Admin App Test Cases(failed) -->
 </suite> <!-- Failed suite [HG Super Admin Application Test Automation Test Suite] -->
