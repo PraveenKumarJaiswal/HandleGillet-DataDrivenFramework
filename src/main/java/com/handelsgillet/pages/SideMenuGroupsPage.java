@@ -39,7 +39,7 @@ public class SideMenuGroupsPage extends TestBase
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
 	WebElement cancelButton;
 	
-	@FindBy(xpath="//button[contains(text(),'Cancel')]//following::Button")
+	@FindBy(xpath="//button[contains(text(),'Back')]//following::Button")
 	WebElement editButton;
 	
 	@FindBy(xpath="//input[@placeholder='Enter Club Name']")
@@ -209,6 +209,13 @@ public class SideMenuGroupsPage extends TestBase
 	//++++++++++++++++++++++++++++++++++++ Verify Clubs Tab.      ++++++++++++++++++++++++++++++++++++++++
 	//=============================================================================================================
 	
+	public void clubSearch() throws InterruptedException
+	{
+		clubsTab.click();
+		searchTextBox.sendKeys("Er");
+		Thread.sleep(3000);
+	}
+	
 	public void viewClubsAndBack() throws InterruptedException
 	{
 		clubsTab.click();
@@ -220,7 +227,7 @@ public class SideMenuGroupsPage extends TestBase
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
-			cancelButton.click();
+			backButton.click();
 			Thread.sleep(3000);
 			view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 		}
@@ -243,6 +250,8 @@ public class SideMenuGroupsPage extends TestBase
 			Thread.sleep(3000);
 			cancelButton.click();
 			Thread.sleep(9000);
+			backButton.click();
+			Thread.sleep(3000);
 			view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
 		}
 	}
@@ -261,11 +270,12 @@ public class SideMenuGroupsPage extends TestBase
 			Thread.sleep(3000);
 			editButton.click();
 			Thread.sleep(3000);
-			clubNameTextBox.sendKeys("New Club");
+			clubNameTextBox.sendKeys("Testing Club");
 			Thread.sleep(3000);
 			updateButton.click();
 			Thread.sleep(9000);
-			view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
+			break;
+			//view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
 		}
 	}
 	

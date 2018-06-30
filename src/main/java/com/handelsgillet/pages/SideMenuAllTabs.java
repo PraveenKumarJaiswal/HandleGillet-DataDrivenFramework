@@ -7,49 +7,49 @@ import com.handelsgillet.testBase.TestBase;
 
 public class SideMenuAllTabs extends TestBase
 {
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_Home']")
 	WebElement sideHomeTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[22]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_NewApplications']")
 	WebElement sideNewApplicationTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[23]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_ManageMember']")
 	WebElement sideManageMemberTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[24]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_Groups']")
 	WebElement sideGroupsTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[25]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_EventsNonMember']")
 	WebElement sideEventsTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[26]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_ManageTags']")
 	WebElement sideManageTagsTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[27]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_CreateSite']")
 	WebElement sideCreateSiteTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="")
 	WebElement sideManageArticleTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="")
 	WebElement sideSuppliersTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="")
 	WebElement sideManageRoomBookingTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="")
 	WebElement sideFeeStructureTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_Roles']")
 	WebElement sideRole;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="")
 	WebElement sideStatisticsTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="")
 	WebElement sideEditStaticPageTab;
 	
-	@FindBy(xpath="//span[@class='logo text-uppercase']//following::a[21]")
+	@FindBy(xpath="//*[@class='col-md-2 hg-mainsection-left p_lr_0 sideMenu_width mobile_let_menu success']//following::a[@id='side_memberTypes']")
 	WebElement sideMemberTypesTab;
 	
 	

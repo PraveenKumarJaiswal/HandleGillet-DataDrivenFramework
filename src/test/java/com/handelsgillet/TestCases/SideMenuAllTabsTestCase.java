@@ -65,7 +65,7 @@ public class SideMenuAllTabsTestCase extends TestBase
 		//sideMenuEventsPage = loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 		
 		loginPage = new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		
 		Thread.sleep(3000);
 		

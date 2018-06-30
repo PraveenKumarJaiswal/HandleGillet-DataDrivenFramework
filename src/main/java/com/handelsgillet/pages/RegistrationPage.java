@@ -21,7 +21,7 @@ public class RegistrationPage extends TestBase
 	@FindBy(xpath="//a[contains(text(),'Login')]")
 	WebElement LoginIcon;
 
-	@FindBy(xpath="/html/body/app-root/app-home/header/div/div/div[2]/a[1]")
+	@FindBy(xpath="//a[contains(text(),'Apply For Membership')]")
 	WebElement applyForMembershipLink;
 	
 	@FindBy(xpath="//a[contains(text(),'Rigister Now')]")
@@ -163,7 +163,7 @@ public class RegistrationPage extends TestBase
 	@FindBy(xpath="//a[contains(text(),'Login Now')]")
 	WebElement loginNowLink;
 	
-	@FindBy(xpath="/html/body/app-root/app-apply-membership/app-dialogue-popup/div[1]/h3")
+	@FindBy(xpath="//div[@class='dialog ng-tns-c3-7 ng-trigger ng-trigger-dialog ng-star-inserted']")
 	WebElement registrationSuccessfullyWindow;
 	
 	//Constructor of this class or Initializing the page object.
@@ -308,7 +308,7 @@ public class RegistrationPage extends TestBase
 	        String text = registrationSuccessfullyWindow.getText();
 	        System.out.println(text);
 	        
-	        Thread.sleep(3000);
+	        Thread.sleep(8000);
 	        
 	        popUpCloseButton.click();
 	        

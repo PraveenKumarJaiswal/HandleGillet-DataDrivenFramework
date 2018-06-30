@@ -32,7 +32,7 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 		initialization();
 		
 		loginPage = new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		sideMenuAllTabs= new SideMenuAllTabs();
 		Thread.sleep(3000);
 	}
@@ -42,7 +42,7 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 	//=============================================================================================================
 
 	
-	@Test(priority = 0, enabled = false)
+	@Test(priority = 0, enabled = true)
 	public void verifyNewApplicationViewAndCancelClick() throws Throwable
 	{
 		sidemenuhomepage = new SideMenuHomePage();
@@ -53,7 +53,7 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 		Thread.sleep(3000);
 		sideMenuNewApplicationsPage.ViewApplicationFormAndCancel();
 		Thread.sleep(3000);
-		System.out.println("Cazncel the application");
+		System.out.println("Cancel the application");
 		driver.quit();			
 	}
 	
@@ -62,7 +62,7 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 	//++++++++++++++++++++++   View All New Application and accept them      +++++++++++++++++++++++++++++
 	//=============================================================================================================
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void verifyNewApplicationViewAndAcceptApplication() throws Throwable
 	{
 		sidemenuhomepage = new SideMenuHomePage();
@@ -79,7 +79,7 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 	//++++++++++++++++++++++   View All New Application and Delete them      +++++++++++++++++++++++++++++
 	//=============================================================================================================
 
-		@Test(priority = 2, enabled = false)
+		@Test(priority = 2, enabled = true)
 		public void verifyNewApplicationViewAndDeleteApplication() throws Throwable
 		{
 			sidemenuhomepage = new SideMenuHomePage();
@@ -90,6 +90,8 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 			Thread.sleep(3000);
 			sideMenuNewApplicationsPage.ViewApplicationFormAndDeleteApplication();
 			Thread.sleep(3000);
+			
+			
 			driver.quit();			
 		}
 		//=============================================================================================================
@@ -105,8 +107,20 @@ public class SideMenuNewApplicationPageTestCase extends TestBase
 				sideMenuNewApplicationsPage = new SideMenuNewApplicationsPage();
 				sideMenuNewApplicationsPage.ViewNewApplicationTableData();
 				Thread.sleep(5000);
-				sideMenuNewApplicationsPage.ViewApplicationFormAndEdit_SaveApplication();
+				sideMenuNewApplicationsPage.ViewApplicationFormAndEdit_CancelApplication();
+				Thread.sleep(5000);
+				driver.quit();			
+			}
+			@Test(priority = 4, enabled = true)
+			public void VerifyApplicationFormAndEdit_SaveApplication() throws Throwable
+			{
+				sidemenuhomepage = new SideMenuHomePage();
+				sidemenuhomepage.clickOnMoreInfoNewApplications();
 				Thread.sleep(3000);
+				sideMenuNewApplicationsPage = new SideMenuNewApplicationsPage();
+				sideMenuNewApplicationsPage.ViewNewApplicationTableData();
+				Thread.sleep(5000);
+				sideMenuNewApplicationsPage.ViewApplicationFormAndEdit_SaveApplication();
 				driver.quit();			
 			}
 }

@@ -29,7 +29,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 		initialization();
 		
 		loginPage = new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		sideMenuAllTabs= new SideMenuAllTabs();
 		Thread.sleep(3000);
 		sideMenuManageMemberPage = new SideMenuManageMemberPage();
@@ -47,6 +47,8 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 					
 	}
 	
+	//This test has been removed
+	/*
 	@Test(priority = 1, enabled = false)
 	public void verifyManageMemberViewAndBack() throws Throwable
 	{
@@ -55,9 +57,9 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 		sideMenuManageMemberPage.viewManageMemberTableData();
 		Thread.sleep(3000);
 		sideMenuManageMemberPage.viewManageMemberAndBack();
-		Thread.sleep(3000);
-					
+		Thread.sleep(3000);			
 	}
+	
 	
 	@Test(priority = 2, enabled = false)
 	public void verifyManageMemberViewAndPrint() throws Throwable
@@ -86,7 +88,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = false)
 	public void verifyManageMemberDeleteNo() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -122,8 +124,10 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 		sideMenuManageMemberPage.deleteManageMemberAllYes();
 					
 	}
+	*/
 	
-	@Test(priority = 6, enabled = true)
+	
+	@Test(priority = 6, enabled = false)
 	public void verifysubscriptionManageMemberClose() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -145,7 +149,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 8, enabled = true)
 	public void verifyDetailsManageMemberClubClose() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -155,7 +159,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 		sideMenuManageMemberPage.detailsManageMemberClubClose();
 					
 	}
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 8, enabled = true)
 	public void verifyDetailsManageMemberGroupClose() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();

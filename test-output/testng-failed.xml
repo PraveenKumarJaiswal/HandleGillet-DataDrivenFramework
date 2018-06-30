@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [HG Super Admin Application Test Automation Test Suite]">
-  <listeners>
-    <listener class-name="com.handelsgillet.ExtentReportListner.ExtentReportHG"/>
-  </listeners>
-  <test name="Super Admin App Test Cases(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.handelsgillet.TestCases.SideMenuHomePageTestCase">
+      <class name="com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase">
         <methods>
-          <include name="homePageFeatures"/>
+          <include name="tearDown"/>
+          <include name="verifyDetailsManageMemberClubClose"/>
           <include name="setUp"/>
+          <include name="verifyDetailsManageMemberGroupClose"/>
         </methods>
-      </class> <!-- com.handelsgillet.TestCases.SideMenuHomePageTestCase -->
+      </class> <!-- com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase -->
     </classes>
-  </test> <!-- Super Admin App Test Cases(failed) -->
-</suite> <!-- Failed suite [HG Super Admin Application Test Automation Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

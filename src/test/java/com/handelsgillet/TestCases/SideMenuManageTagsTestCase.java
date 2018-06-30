@@ -31,7 +31,7 @@ public class SideMenuManageTagsTestCase extends TestBase
 	{
 		initialization();
 		loginPage=new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		sideMenuAllTabs = new SideMenuAllTabs();
 		sideMenuManageTagsPage = new SideMenuManageTagsPage();
 	}

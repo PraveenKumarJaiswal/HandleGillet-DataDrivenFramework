@@ -28,7 +28,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		initialization();
 		
 		loginPage = new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		sideMenuAllTabs= new SideMenuAllTabs();
 		Thread.sleep(3000);
 		sideMenuGroupsPage = new SideMenuGroupsPage();
@@ -40,7 +40,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 	//++++++++++++++++++++++++++++++++++++ Verify Groups Tab.      ++++++++++++++++++++++++++++++++++++++++
 	//=============================================================================================================
 
-	@Test(priority = 0, enabled = false)
+	@Test(priority = 0, enabled = true)
 	public void verifygroupSearch() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -50,15 +50,15 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		sideMenuGroupsPage.viewTableData();		
 	}
 	
-	@Test(priority = 1, enabled = false)
-	public void verifyViewGuoupAndBack() throws Throwable
+	@Test(priority = 1, enabled = true)
+	public void verifyViewGroupAndBack() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
 		Thread.sleep(3000);
 		sideMenuGroupsPage.viewGuoupAndBack();			
 	}
 	
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void verifyViewGuoupEditCancel() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -66,7 +66,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		sideMenuGroupsPage.viewGuoupAndEditCancel();			
 	}
 	
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void verifyViewGuoupAndEditUpdate() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -74,7 +74,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		sideMenuGroupsPage.viewGuoupAndEditUpdate();
 	}
 	
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void verifyGroupDeleteNo() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -109,7 +109,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void verifygoToSiteGroups() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -125,7 +125,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 	//=============================================================================================================
 	
 	
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void verifyClubSearch() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -137,7 +137,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 8, enabled = true)
 	public void verifyViewClubAndBack() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -145,7 +145,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		sideMenuGroupsPage.viewClubsAndBack();		
 	}
 	
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 9, enabled = true)
 	public void verifyViewClubEditCancel() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -154,7 +154,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 10, enabled = false)
+	@Test(priority = 10, enabled = true)
 	public void verifyViewClubAndEditUpdate() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -173,7 +173,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		Thread.sleep(3000);
 	}
 	
-	@Test(priority = 12, enabled = false)
+	@Test(priority = 12, enabled = true)
 	public void verifyClubDeleteYes() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -196,7 +196,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 14, enabled = false)
+	@Test(priority = 14, enabled = true)
 	public void verifygoToSiteClubs() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();

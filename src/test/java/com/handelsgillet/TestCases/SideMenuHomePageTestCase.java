@@ -32,7 +32,7 @@ public class SideMenuHomePageTestCase extends TestBase
 		initialization();
 		
 		loginPage = new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		
 		Thread.sleep(3000);
 		sideMenuAllTabs= new SideMenuAllTabs();

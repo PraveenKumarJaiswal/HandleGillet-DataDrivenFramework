@@ -12,10 +12,10 @@ import com.handelsgillet.testBase.TestBase;
 
 public class SideMenuManageMemberPage extends TestBase
 {
-	@FindBy(xpath="//input[@placeholder = 'search']")
+	@FindBy(xpath="//input[@placeholder = 'Search']")
 	WebElement searchTextBox;
 	
-	@FindBy(xpath="//Button[@class='btn btn-primary text-uppercase text-b-500 ng-star-inserted']")
+	@FindBy(xpath="//*[@class='fa fa-search fa-1x']")
 	WebElement searchButton;
 	
 	@FindBy(xpath="//Button[contains(text(),'Advance Search')]")
@@ -63,6 +63,9 @@ public class SideMenuManageMemberPage extends TestBase
 	@FindBy(xpath="//input[@type='text']")
 	WebElement textField;
 	
+	@FindBy(xpath="//app-dialogue-popup[2]/div")
+	WebElement managerMemberPopUp;
+	
 	LoginPage loginPage;
 	public SideMenuManageMemberPage()
 	{
@@ -72,7 +75,7 @@ public class SideMenuManageMemberPage extends TestBase
 	public void ManageMemberSearch() throws InterruptedException
 	{
 		
-		searchTextBox.sendKeys("Erik");
+		searchTextBox.sendKeys("E");
 		Thread.sleep(3000);
 		searchButton.click();
 	}
@@ -212,7 +215,8 @@ public class SideMenuManageMemberPage extends TestBase
 		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='Subscription']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++) -- This is for whole table
+		for(int i=0;i<1;i++)
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
@@ -231,7 +235,8 @@ public class SideMenuManageMemberPage extends TestBase
 		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='Subscription']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++)
+		for(int i=0;i<1;i++)	
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
@@ -246,14 +251,17 @@ public class SideMenuManageMemberPage extends TestBase
 	
 	public void detailsManageMemberClubClose() throws InterruptedException
 	{
-		List<WebElement> view = driver.findElements(By.xpath("//td[11]/button"));
+		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='Details']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++)
+		for(int i=0;i<1;i++)
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
-			textField.sendKeys("Hello");
+			managerMemberPopUp.click();
+			Thread.sleep(3000);
+			textField.sendKeys("Club Tab");
 			Thread.sleep(3000);
 			Select dd = new Select(driver.findElement(By.xpath("//div[2]/select")));
 			dd.selectByIndex(1);
@@ -264,16 +272,21 @@ public class SideMenuManageMemberPage extends TestBase
 	
 	public void detailsManageMemberGroupsClose() throws InterruptedException
 	{
-		List<WebElement> view = driver.findElements(By.xpath("//td[11]/button"));
+		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='Details']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++)
+		for(int i=0;i<1;i++)
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
+			managerMemberPopUp.click();
+			Thread.sleep(3000);
+			managerMemberPopUp.getText();
+			Thread.sleep(3000);
 			groupTab.click();
 			Thread.sleep(3000);
-			textField.sendKeys("Hello");
+			textField.sendKeys("group Tab");
 			Thread.sleep(3000);
 			Select dd = new Select(driver.findElement(By.xpath("//div[2]/select")));
 			dd.selectByIndex(3);

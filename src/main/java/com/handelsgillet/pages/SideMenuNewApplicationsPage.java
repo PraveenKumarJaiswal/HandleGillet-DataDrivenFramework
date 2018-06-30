@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.hssf.record.PageBreakRecord.Break;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,8 +28,9 @@ public class SideMenuNewApplicationsPage extends TestBase
 	
 	@FindBy(xpath="//*[contains(text(),'Next')]")
 	WebElement nextButton;
+	//table[@class='table table-striped']//td[@class='div_content_center']
 	
-	@FindBy(xpath=" //table[@class='table table-striped']//td[@class='div_content_center']")
+	@FindBy(xpath="//button[@tooltip='View']")
 	WebElement viewButtom;
 	
 	@FindBy(xpath="//textarea[@placeholder='Enter Notes']//following::button[1]")
@@ -102,20 +104,22 @@ public class SideMenuNewApplicationsPage extends TestBase
 		
 		public void ViewApplicationFormAndAcceptApplication() throws InterruptedException
 		{
-			List<WebElement> view = driver.findElements(By.xpath("//table[@class='table table-striped']//td[@class='div_content_center']"));
+			List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 			int view_count = view.size();
 			System.out.println("view count is: "+view_count);
 			for(int i=0;i<view_count;i++)
 			{
 				view.get(i).click();
-				Thread.sleep(3000);
+				//Thread.sleep(5000);
 				System.out.println("Viewed the New applicant form");
 				acceptApplicationButton.click();
-				Thread.sleep(3000);
 				
-				//As nothing is happening when accepting application so after clicking on accepting application clicking on cancel button.
-				cancelButton.click();
+				Thread.sleep(3000);
+				view = driver.findElements(By.xpath("//table[@class='table table-striped']//td[@class='div_content_center']"));
+				
+				break;
 			}
+			
 		}
 		
 		public void ViewApplicationFormAndDeleteApplication() throws InterruptedException
@@ -125,26 +129,25 @@ public class SideMenuNewApplicationsPage extends TestBase
 			System.out.println("view count is: "+view_count);
 			for(int i=0;i<view_count;i++)
 			{
-				//WebDriverWait wait = new WebDriverWait(driver, 10);
-				//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(" //table[@class='table table-striped']//td[@class='div_content_center']")));
 				
 				view.get(i).click();
 				Thread.sleep(3000);
 				System.out.println("Viewed the New applicant form");
+				System.out.println("Deleted one row");
 				deleteApplicatinButton.click();
-				Thread.sleep(3000);
+				break;
+				
+				
 			}
 		}
 		
 		public void ViewApplicationFormAndEdit_CancelApplication() throws InterruptedException
 		{
-			List<WebElement> view = driver.findElements(By.xpath("//table[@class='table table-striped']//td[@class='div_content_center']"));
+			List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 			int view_count = view.size();
 			System.out.println("view count is: "+view_count);
 			for(int i=0;i<view_count;i++)
 			{
-				//WebDriverWait wait = new WebDriverWait(driver, 10);
-				//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(" //table[@class='table table-striped']//td[@class='div_content_center']")));
 				
 				view.get(i).click();
 				Thread.sleep(3000);
@@ -159,21 +162,20 @@ public class SideMenuNewApplicationsPage extends TestBase
 				System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 				System.out.println("clicked on edit cancel button");
 				System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
-				
-				
+				view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 				Thread.sleep(3000);
+				//break;
+				
 			}
 		}
 		
 		public void ViewApplicationFormAndEdit_SaveApplication() throws InterruptedException
 		{
-			List<WebElement> view = driver.findElements(By.xpath("//table[@class='table table-striped']//td[@class='div_content_center']"));
+			List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 			int view_count = view.size();
 			System.out.println("view count is: "+view_count);
 			for(int i=0;i<view_count;i++)
 			{
-				//WebDriverWait wait = new WebDriverWait(driver, 10);
-				//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(" //table[@class='table table-striped']//td[@class='div_content_center']")));
 				
 				view.get(i).click();
 				Thread.sleep(3000);
@@ -187,10 +189,12 @@ public class SideMenuNewApplicationsPage extends TestBase
 				
 				editSaveApplicationButton.click();
 				Thread.sleep(3000);
-
+				cancelButton.click();
+				Thread.sleep(3000);
 				System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 				System.out.println("clicked on edit save button");
 				System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
+				view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 			}
 		}
 		

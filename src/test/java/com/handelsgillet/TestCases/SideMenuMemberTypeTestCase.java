@@ -28,7 +28,7 @@ public class SideMenuMemberTypeTestCase  extends TestBase
 		initialization();
 		
 		loginPage = new LoginPage();
-		loginPage.login("krogius@winwap.com", "123456", "SuperAdminLogin");
+		loginPage.login("kimm@gmail.com", "123456", "SuperAdminLogin");
 		sideMenuAllTabs= new SideMenuAllTabs();
 		Thread.sleep(3000);
 		sideMenuMemberTypePage = new SideMenuMemberTypePage();

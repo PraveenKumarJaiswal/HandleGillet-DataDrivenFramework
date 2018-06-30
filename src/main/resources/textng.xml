@@ -17,12 +17,16 @@
 			<class name="com.handelsgillet.TestCases.LoginMemberPageTestCase"></class>
 			<class name="com.handelsgillet.TestCases.LoginClubAdminPageTestCase"></class>
 			
-			<!-- <class name="com.handelsgillet.TestCases.SideMenuMainTabsTestCase"></class>
-			 -->
+			<class name="com.handelsgillet.TestCases.SideMenuMainTabsTestCase"></class>
+			
 			<class name="com.handelsgillet.TestCases.SideMenuHomePageTestCase"></class>
 			<class name="com.handelsgillet.TestCases.SideMenuNewApplicationPageTestCase"></class>
-			<class name="com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase"></class>
 			<class name="com.handelsgillet.TestCases.SideMenuGroupsPageTestCase"></class>
+			
+			
+			
+			<class name="com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase"></class>
+			
 			<!-- 
 			<class name="com.handelsgillet.TestCases.EventsSideMenuPageTestCase"></class>
 			 -->
