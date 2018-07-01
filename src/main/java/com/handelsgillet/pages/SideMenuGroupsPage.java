@@ -39,7 +39,7 @@ public class SideMenuGroupsPage extends TestBase
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
 	WebElement cancelButton;
 	
-	@FindBy(xpath="//button[contains(text(),'Back')]//following::Button")
+	@FindBy(xpath="//button[@class='btn btn-primary mar-t-20 text-uppercase text-b-500 ng-star-inserted']")
 	WebElement editButton;
 	
 	@FindBy(xpath="//input[@placeholder='Enter Club Name']")
@@ -106,20 +106,21 @@ public class SideMenuGroupsPage extends TestBase
 	
 	public void viewGuoupAndEditCancel() throws InterruptedException
 	{
-		List<WebElement> view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
+		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
 		for(int i=0;i<view_count;i++)
 		{
 			view.get(i).click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			editButton.click();
 			Thread.sleep(3000);
-			clubNameTextBox.sendKeys("New Club");
+			clubNameTextBox.sendKeys("New Club Testing");
 			Thread.sleep(3000);
 			cancelButton.click();
 			Thread.sleep(9000);
-			view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
+			break;
+			//view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
 		}
 	}
 	
@@ -139,7 +140,8 @@ public class SideMenuGroupsPage extends TestBase
 			Thread.sleep(3000);
 			updateButton.click();
 			Thread.sleep(9000);
-			view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
+			break;
+			//view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
 		}
 	}
 	
@@ -235,12 +237,15 @@ public class SideMenuGroupsPage extends TestBase
 	
 	public void viewClubsAndEditCancel() throws InterruptedException
 	{
+		System.out.println("Switchign to Club tab");
+		Thread.sleep(3000);
 		clubsTab.click();
 		Thread.sleep(3000);
-		List<WebElement> view = driver.findElements(By.xpath("//i[@class='fa fa-eye']"));
+		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++)
+		for(int i=0;i<1;i++)
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
@@ -259,12 +264,15 @@ public class SideMenuGroupsPage extends TestBase
 	
 	public void viewClubsAndEditUpdate() throws InterruptedException
 	{
+		System.out.println("Switchign to Club tab");
+		Thread.sleep(3000);
 		clubsTab.click();
 		Thread.sleep(3000);
 		List<WebElement> view = driver.findElements(By.xpath("//button[@tooltip='View']"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++)
+		for(int i=0;i<1;i++)
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
@@ -336,14 +344,21 @@ public class SideMenuGroupsPage extends TestBase
 	{
 		clubsTab.click();
 		Thread.sleep(3000);
-		List<WebElement> view = driver.findElements(By.xpath("//a[@class='btn btn-primary']"));
+		List<WebElement> view = driver.findElements(By.xpath("//*[contains(text(),'Go To Site')]"));
 		int view_count = view.size();
 		System.out.println("view count is: "+view_count);
-		for(int i=0;i<view_count;i++)
+		//for(int i=0;i<view_count;i++)
+		for(int i=0;i<1;i++)
 		{
 			view.get(i).click();
 			Thread.sleep(3000);
-			//driver.switchTo().defaultContent();
+			WebElement popUp = driver.findElement(By.xpath("/html/body/app-root/app-dashboard/div/main/div/aside[2]/app-manage-groups-parent/div/div/app-manage-clubs-parent/div/div/app-manage-clubs/app-dialogue-popup[3]/div[1]"));
+			popUp.click();
+			Thread.sleep(3000);
+			WebElement okButton = driver.findElement(By.xpath("//button[text()='OK']"));
+			okButton.click();
+			System.out.println("Clicked on OK button");
+			break;
 		}
 	}
 

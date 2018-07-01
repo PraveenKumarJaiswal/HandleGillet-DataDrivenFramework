@@ -4,14 +4,28 @@
   <listeners>
     <listener class-name="com.handelsgillet.ExtentReportListner.ExtentReportHG"/>
   </listeners>
-  <test name="Super Admin App Test Cases(failed)">
+  <test name="All Menu Option test case(failed)">
     <classes>
-      <class name="com.handelsgillet.TestCases.SideMenuHomePageTestCase">
+      <class name="com.handelsgillet.TestCases.HGLandingMenuPageTestCase">
         <methods>
-          <include name="homePageFeatures"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="verifyMenuOmHandelsgilletTest"/>
         </methods>
-      </class> <!-- com.handelsgillet.TestCases.SideMenuHomePageTestCase -->
+      </class> <!-- com.handelsgillet.TestCases.HGLandingMenuPageTestCase -->
     </classes>
-  </test> <!-- Super Admin App Test Cases(failed) -->
+  </test> <!-- All Menu Option test case(failed) -->
+  <test name="Groups test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.SideMenuGroupsPageTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifygoToSiteClubs"/>
+          <include name="verifyViewGuoupAndEditUpdate"/>
+          <include name="verifyViewGuoupEditCancel"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.SideMenuGroupsPageTestCase -->
+    </classes>
+  </test> <!-- Groups test case(failed) -->
 </suite> <!-- Failed suite [HG Super Admin Application Test Automation Test Suite] -->

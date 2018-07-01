@@ -47,6 +47,8 @@ public class HGLandingMenuPage extends TestBase
 	
 	public MenuOmHandelsgilletPage clickOnMenuOmHandelsgillet() throws Throwable
 	{
+		System.out.println("Launching the HG  homepage");
+		Thread.sleep(30000);
 		LandingPageMenuOmHandelsgillet.click(); 
 		Thread.sleep(3000);
 		return new MenuOmHandelsgilletPage();

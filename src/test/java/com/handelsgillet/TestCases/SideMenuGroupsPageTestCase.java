@@ -85,7 +85,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		Thread.sleep(3000);	
 	}
 	
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void verifyGroupsDeleteYes() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -109,7 +109,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 6, enabled = true)
+	@Test(priority = 7, enabled = true)
 	public void verifygoToSiteGroups() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -125,7 +125,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 	//=============================================================================================================
 	
 	
-	@Test(priority = 7, enabled = true)
+	@Test(priority = 8, enabled = true)
 	public void verifyClubSearch() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -137,7 +137,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 9, enabled = true)
 	public void verifyViewClubAndBack() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -145,7 +145,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		sideMenuGroupsPage.viewClubsAndBack();		
 	}
 	
-	@Test(priority = 9, enabled = true)
+	@Test(priority = 10, enabled = true)
 	public void verifyViewClubEditCancel() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -154,7 +154,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 10, enabled = true)
+	@Test(priority = 11, enabled = true)
 	public void verifyViewClubAndEditUpdate() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -162,7 +162,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		sideMenuGroupsPage.viewClubsAndEditUpdate();
 	}
 	
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 12, enabled = true)
 	public void verifyClubDeleteNo() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -173,7 +173,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 		Thread.sleep(3000);
 	}
 	
-	@Test(priority = 12, enabled = true)
+	@Test(priority = 13, enabled = true)
 	public void verifyClubDeleteYes() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -185,7 +185,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 	
 	//deleting all rows run below test case carefully
 	//DANGER
-	@Test(priority = 13, enabled = false)
+	@Test(priority = 14, enabled = true)
 	public void verifyClubDeleteAllYes() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();
@@ -196,7 +196,7 @@ public class SideMenuGroupsPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 14, enabled = true)
+	@Test(priority = 15, enabled = true)
 	public void verifygoToSiteClubs() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideGroupsTab();

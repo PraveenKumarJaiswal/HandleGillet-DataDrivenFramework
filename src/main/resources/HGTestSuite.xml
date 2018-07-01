@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HG Super Admin Application Test Automation Test Suite">
+
+<listeners>
+	<listener class-name="com.handelsgillet.ExtentReportListner.ExtentReportHG"/>
+</listeners>
+	
+	<test name="All Menu Option test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.HGLandingMenuPageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	
+	 <test name="Registration test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.RegistrationPageTestCase"></class>
+		</classes>
+	</test>
+	
+	 <!-- ############################################################# -->
+	 
+	<test name="Super Admin Login test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.LoginPageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	<test name="HomePage test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.SideMenuHomePageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	<test name="New Application test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.SideMenuNewApplicationPageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	<test name="Manage Member test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	<test name="Groups test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.SideMenuGroupsPageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	<test name="Events test case">
+		<classes>
+			<class name="com.handelsgillet.TestCases.SideMenuEventsPageTestCase"></class>
+		</classes>
+	</test>
+	
+	<!-- ############################################################# -->
+	
+	
+		
+</suite>

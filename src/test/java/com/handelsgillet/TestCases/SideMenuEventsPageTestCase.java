@@ -65,7 +65,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 	         return data;
 	     }
 		 
-		 @Test(priority=1, enabled = false, dataProvider="getCreateEventTestData")
+		 @Test(priority=1, enabled = true, dataProvider="getCreateEventTestData")
 			public void verifyCreateTags(String eName,String eSubject, String ePlace, String sDate, String eDate, 
 					String sTime, String eTime, String seat, String spGuest, String fPerPerson, String fDesc,
 					String desc, String msg) throws Throwable
@@ -81,7 +81,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 			 
 		 }
 		 
-		 @Test(priority =2, enabled = false)
+		 @Test(priority =2, enabled = true)
 			public void verifyHGEventSearch() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -90,7 +90,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				Thread.sleep(3000);
 				sideMenuEventsPage.verifySearch();
 			}
-		 @Test(priority =3, enabled = false)
+		 @Test(priority =3, enabled = true)
 			public void verifyHGEventSearchByDate() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -100,7 +100,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.verifySearchByDate();
 			}
 		 
-		 @Test(priority =4, enabled = false)
+		 @Test(priority =4, enabled = true)
 			public void VerifyApplicationFormAndCancel() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -110,7 +110,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.ViewApplicationFormAndCancel();
 			}
 		 
-		 @Test(priority =5, enabled = false)
+		 @Test(priority =5, enabled = true)
 			public void VerifyHGFormAndEdit_CancelApplication() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -120,7 +120,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.ViewHGFormAndEdit_CancelApplication();
 			}
 		 
-		 @Test(priority =6, enabled = false)
+		 @Test(priority =6, enabled = true)
 			public void VerifyHGEventFormAndEdit_UpdateApplication() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -130,7 +130,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.ViewHGEventFormAndEdit_UpdateApplication();
 			}
 		 
-		 @Test(priority =7, enabled = false)
+		 @Test(priority =7, enabled = true)
 			public void VerifyHGEventFormQuestionare() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -155,7 +155,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.ViewHGEventFormInviteMember();
 			}
 		 //
-		 @Test(priority = 9, enabled = false)
+		 @Test(priority = 9, enabled = true)
 			public void verifyClickonMembersAndBackButton() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -168,7 +168,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 			}
 		 
 		 //
-		 @Test(priority = 10, enabled = false)
+		 @Test(priority = 10, enabled = true)
 			public void verifyCancelEventAndNoButton() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -180,7 +180,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.cancelEventAndNoButton();
 			}
 		 
-		 @Test(priority = 11, enabled = false)
+		 @Test(priority = 11, enabled = true)
 			public void verifyCancelEventAndYesButton() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();
@@ -215,7 +215,7 @@ public class SideMenuEventsPageTestCase  extends TestBase
 				sideMenuEventsPage.clickOnEventsTypeMenuCreateEventAndCancel();
 			}
 		 
-		 @Test(priority = 13, enabled = true)
+		 @Test(priority = 14, enabled = true)
 			public void verifyClickOnEventsTypeMenuCreateEventAndCreate() throws Throwable
 			{
 				sideMenuAllTabs.clickOnSideEventsTab();

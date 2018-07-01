@@ -163,7 +163,7 @@ public class RegistrationPage extends TestBase
 	@FindBy(xpath="//a[contains(text(),'Login Now')]")
 	WebElement loginNowLink;
 	
-	@FindBy(xpath="//div[@class='dialog ng-tns-c3-7 ng-trigger ng-trigger-dialog ng-star-inserted']")
+	@FindBy(xpath="//*[@class='dialog ng-tns-c3-8 ng-trigger ng-trigger-dialog ng-star-inserted']")
 	WebElement registrationSuccessfullyWindow;
 	
 	//Constructor of this class or Initializing the page object.

@@ -36,7 +36,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 		
 	}
 	
-	@Test(priority = 0, enabled = false)
+	@Test(priority = 0, enabled = true)
 	public void verifyManageMemberSearch() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -127,7 +127,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 	*/
 	
 	
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void verifysubscriptionManageMemberClose() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();
@@ -138,7 +138,7 @@ public class SideMenuManageMemberPageTestCase  extends TestBase
 					
 	}
 	
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void verifysubscriptionManageMembersendInvoiceButton() throws Throwable
 	{
 		sideMenuAllTabs.clickOnSideManageMemberTab();

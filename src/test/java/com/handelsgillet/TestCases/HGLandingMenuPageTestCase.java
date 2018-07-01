@@ -45,7 +45,7 @@ public class HGLandingMenuPageTestCase extends TestBase
 		menuGilleMagazinePage = new MenuGilleMagazinePage();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, enabled=true)
 	public void verifyMenuOmHandelsgilletTest() throws Throwable
 	{
 		
