@@ -1,15 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [HG Super Admin Application Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.handelsgillet.ExtentReportListner.ExtentReportHG"/>
+  </listeners>
+  <test name="All Menu Option test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.HGLandingMenuPageTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyMenuGilleMagazineTest"/>
+          <include name="verifyMenuKlubbarTest"/>
+          <include name="verifyMenuAktuelTest"/>
+          <include name="verifyMenuOmHandelsgilletTest"/>
+          <include name="verifyMenuKontakTest"/>
+          <include name="verifyMenuLokaliteterTest"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.HGLandingMenuPageTestCase -->
+    </classes>
+  </test> <!-- All Menu Option test case(failed) -->
+  <test name="Registration test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.RegistrationPageTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="registerTest"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.RegistrationPageTestCase -->
+    </classes>
+  </test> <!-- Registration test case(failed) -->
+  <test name="Super Admin Login test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.LoginPageTestCase">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.LoginPageTestCase -->
+    </classes>
+  </test> <!-- Super Admin Login test case(failed) -->
+  <test name="HomePage test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.SideMenuHomePageTestCase">
+        <methods>
+          <include name="homePageFeatures"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.SideMenuHomePageTestCase -->
+    </classes>
+  </test> <!-- HomePage test case(failed) -->
+  <test name="New Application test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.SideMenuNewApplicationPageTestCase">
+        <methods>
+          <include name="verifyNewApplicationViewAndCancelClick"/>
+          <include name="setUp"/>
+          <include name="verifyNewApplicationViewAndEditCancelApplication"/>
+          <include name="VerifyApplicationFormAndEdit_SaveApplication"/>
+          <include name="verifyNewApplicationViewAndAcceptApplication"/>
+          <include name="verifyNewApplicationViewAndDeleteApplication"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.SideMenuNewApplicationPageTestCase -->
+    </classes>
+  </test> <!-- New Application test case(failed) -->
+  <test name="Manage Member test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifysubscriptionManageMemberClose"/>
+          <include name="verifyDetailsManageMemberClubClose"/>
+          <include name="setUp"/>
+          <include name="verifyDetailsManageMemberGroupClose"/>
+          <include name="verifysubscriptionManageMembersendInvoiceButton"/>
+          <include name="verifyManageMemberSearch"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.SideMenuManageMemberPageTestCase -->
+    </classes>
+  </test> <!-- Manage Member test case(failed) -->
+  <test name="Groups test case(failed)">
+    <classes>
+      <class name="com.handelsgillet.TestCases.SideMenuGroupsPageTestCase">
+        <methods>
+          <include name="verifyGroupsDeleteYes"/>
+          <include name="verifyClubSearch"/>
+          <include name="verifyViewClubEditCancel"/>
+          <include name="verifygoToSiteClubs"/>
+          <include name="verifyViewClubAndBack"/>
+          <include name="verifyClubDeleteYes"/>
+          <include name="verifyViewGuoupAndEditUpdate"/>
+          <include name="verifyViewClubAndEditUpdate"/>
+          <include name="verifyViewGuoupEditCancel"/>
+          <include name="tearDown"/>
+          <include name="verifyClubDeleteNo"/>
+          <include name="verifygroupSearch"/>
+          <include name="verifyClubDeleteAllYes"/>
+          <include name="verifyViewGroupAndBack"/>
+          <include name="setUp"/>
+          <include name="verifyGroupDeleteNo"/>
+          <include name="verifygoToSiteGroups"/>
+        </methods>
+      </class> <!-- com.handelsgillet.TestCases.SideMenuGroupsPageTestCase -->
+    </classes>
+  </test> <!-- Groups test case(failed) -->
+  <test name="Events test case(failed)">
     <classes>
       <class name="com.handelsgillet.TestCases.SideMenuEventsPageTestCase">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyEventAllTabNavigation"/>
+          <include name="verifyHGEventSearchByDate"/>
+          <include name="VerifyHGEventFormAndEdit_UpdateApplication"/>
+          <include name="VerifyApplicationFormAndCancel"/>
           <include name="tearDown"/>
+          <include name="verifyCancelEventAndYesButton"/>
+          <include name="verifyHGEventSearch"/>
+          <include name="verifyCancelEventAndNoButton"/>
+          <include name="setUp"/>
+          <include name="verifyClickOnEventsTypeMenuCreateEventAndCreate"/>
+          <include name="verifyClickonMembersAndBackButton"/>
+          <include name="verifyCreateTags"/>
+          <include name="VerifyHGEventFormQuestionare"/>
+          <include name="verifygroupsSearchEventsType"/>
+          <include name="verifyClickOnEventsTypeMenuCreateEventAndCancel"/>
+          <include name="VerifyHGEventFormInviteMember"/>
+          <include name="VerifyHGFormAndEdit_CancelApplication"/>
         </methods>
       </class> <!-- com.handelsgillet.TestCases.SideMenuEventsPageTestCase -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Events test case(failed) -->
+</suite> <!-- Failed suite [HG Super Admin Application Test Automation Test Suite] -->

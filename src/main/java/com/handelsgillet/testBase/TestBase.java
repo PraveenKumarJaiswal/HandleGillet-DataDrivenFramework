@@ -28,7 +28,10 @@ public class TestBase
 		  
 		try{
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("D:\\Demo-master\\src\\main\\java\\com\\handelsgillet\\config\\config.properties"); 
+			String configFile  = System.getProperty("user.dir")+"/src/main/java/com/handelsgillet/config/config.properties";
+			
+			FileInputStream ip = new FileInputStream(configFile);
+			//FileInputStream ip = new FileInputStream("D:\\Demo-master\\src\\main\\java\\com\\handelsgillet\\config\\config.properties"); 
 			prop.load(ip);
 		}
 		catch(FileNotFoundException e)
@@ -47,7 +50,8 @@ public class TestBase
 		String browserName=prop.getProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome"))			
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\Demo-master\\drivers\\chromedriver.exe");	
+			//System.setProperty("webdriver.chrome.driver", "D:\\Demo-master\\drivers\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))			

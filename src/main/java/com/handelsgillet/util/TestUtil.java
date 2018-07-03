@@ -25,9 +25,11 @@ public class TestUtil extends TestBase
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=20;
 	
-	public static String TESTDATA_SHEET_PATH = "D:\\Demo-master\\src\\main\\java\\com\\handelsgillet\\testdata\\HGAdminData.xlsx";
-
-
+	//public static String TESTDATA_SHEET_PATH = "D:\\Demo-master\\src\\main\\java\\com\\handelsgillet\\testdata\\HGAdminData.xlsx";
+	//String xmlFile  = System.getProperty("user.dir")+"/src/main/resources/HGTestSuite.xml";
+	
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")+"/src/main/java/com/handelsgillet/testdata/HGAdminData.xlsx";
+	
 	static Workbook book;
 	static Sheet sheet;
 	    
